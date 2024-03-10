@@ -12,6 +12,7 @@ def factorize(n):
     else:
         return factors
 
+
 def main(filename):
     with open(filename, 'r') as file:
         for line in file:
@@ -22,6 +23,7 @@ def main(filename):
                 print(f"{n}={p}*{q}")
             else:
                 print(f"Unable to factorize {n}")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
